@@ -3,7 +3,7 @@
 
 :root {
   --main-colour: lab(7.29% 0.76 -16.66);    /* header background */
-  --accent-colour: #f7d5b0;  /* buttons and focus outline; passes 4.5:1 on white */
+  --accent-colour: hsl(31, 62%, 76%);  /* buttons and focus outline; passes 4.5:1 on white */
 }
 
 body {
