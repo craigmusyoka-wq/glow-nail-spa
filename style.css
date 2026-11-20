@@ -2,8 +2,8 @@
    Day 3: change the two colours, check contrast, then switch on the media query. */
 
 :root {
-  --main-colour: hsl(210, 91%, 9%);    /* header background */
-  --accent-colour: hsl(31, 82%, 83%);  /* buttons and focus outline; passes 4.5:1 on white */
+  --main-colour: lab(7.29% 0.76 -16.66);    /* header background */
+  --accent-colour: #f7d5b0;  /* buttons and focus outline; passes 4.5:1 on white */
 }
 
 body {
