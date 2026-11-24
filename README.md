@@ -21,4 +21,4 @@ Every image, fact and dataset is listed on the About page and in my source recor
 What I asked the AI (Claude or Cursor), what I checked and what I changed is in my AI accountability log.
 
 ## What I would do next
-One or two ideas.
+I would like to be able to add a login system to the website
