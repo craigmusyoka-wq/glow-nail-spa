@@ -1,13 +1,13 @@
-# Glow Nail Spa
+# Craig's Nail Spa
 
 ## What this site is
-A website for Glow Nail Spa, a made-up nail salon. One or two sentences.
+A website for Craig's Nail Spa, to show different nail services and their prices online.
 
 ## Who it is for
-[Your user: a customer choosing a service] and what they need from it.
+This site is for a customer choosing a nail service.It helps them what they need to know before they walk in.
 
 ## How to open it
-Live site: [your GitHub Pages address]
+Live site: https://craigmusyoka-wq.github.io/glow-nail-spa/index.html
 
 ## What it does
 - Three connected pages: Home, About us, Services
