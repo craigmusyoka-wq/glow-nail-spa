@@ -27,7 +27,7 @@ if (toggleButton) {
 
 // Day 4, Block 2: first add the list section to index.html (the page gives you the HTML),
 // then delete the slash-star line below and the star-slash line at the end to switch this on.
-/*
+
 const items = ["Clean tools every time", "Clear prices before we start", "A friendly welcome", "Walk in, no booking needed"];
 const list = document.querySelector("#item-list");
 
@@ -40,4 +40,25 @@ if (list) {
   }
   console.log("Items shown:", items.length);
 }
-*/
+// Day 6, Block 1: show every service from data.js on the Services page
+const dataList = document.querySelector("#data-list");
+
+// Only run this on a page that has the data list.
+if (dataList) {
+  for (const service of services) {
+    const li = document.createElement("li");
+
+    // Over an hour is a long appointment. Otherwise it is a quick visit.
+    let visit = "";
+    if (service.minutes > 60) {
+      visit = "Long appointment";
+    } else {
+      visit = "Quick visit";
+    }
+
+    li.textContent = service.name + " (" + service.category + "): KSh " + service.priceKsh + ", " + service.minutes + " minutes. " + visit;
+    dataList.appendChild(li);
+  }
+  console.log("Services shown:", services.length);
+}
+
