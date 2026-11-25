@@ -61,27 +61,28 @@ if (dataList) {
   }
   console.log("Services shown:", services.length);
 }
-// Day 6, Block 2: keep only the free clubs
-// Only run this on a page that has the data list.
+// Day 6, Block 2: keep only the services under KSh 1000
 if (dataList) {
-  const free = clubs.filter(function (club) {
-    return club.costKsh === 0;
+  const cheap = services.filter(function (service) {
+    return service.priceKsh < 1000;
   });
 
   const filterCount = document.querySelector("#filter-count");
   const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = free.length + " of " + clubs.length + " clubs match.";
 
-  for (const club of free) {
+  filterCount.textContent = cheap.length + " of " + services.length + " services cost under KSh 1,000.";
+
+  for (const service of cheap) {
     const li = document.createElement("li");
-    li.textContent = club.name + " on " + club.day;
+    li.textContent = service.name + ": KSh " + service.priceKsh;
     filterList.appendChild(li);
   }
 
-  if (free.length === 0) {
+  if (cheap.length === 0) {
     const li = document.createElement("li");
-    li.textContent = "No clubs match";
+    li.textContent = "No services match";
     filterList.appendChild(li);
   }
 }
+
 
